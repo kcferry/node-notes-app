@@ -16,9 +16,9 @@ const addNote = (title, body) => {
             body
         })
         saveNotes(notes)
-        console.log('New Note Added!')
+        console.log(chalk.greenBright.inverse('New Note Adedd!'))
     } else {
-        console.log('Note title already excists!')
+        console.log(chalk.redBright.inverse('Note title already excists!'))
     }
 
 }
